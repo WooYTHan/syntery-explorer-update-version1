@@ -1,0 +1,98 @@
+<html>
+<head>
+    <base href="">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- SmartMenus core CSS (required) -->
+    <link href="smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css" />
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="smartmenus/css/sm-clean/sm-clean.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <title></title>
+
+</head>
+
+<body>
+    <div>
+        <nav class="main-nav navbar-fixed-top" role="navigation">
+            <h2 class="nav-brand"><a href="#">Synteny Explorer</h2></a>
+            <ul id="main-menu" class="sm sm-clean">
+                <li><a href="#">Display</a>
+                    <ul>
+                        <li><a href="#">Layout</a>
+                            <ul>
+                                <li><a href="#" id="radial">Radial</a></li>
+                                <li><a href="#" id="linear">Linear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Zoom</a>
+                            <ul>
+                                <li>
+                                    <input id="zoomValue" type="number" value="100" min="1" max="200" onkeypress="return event.charCode >= 48 && event.charCode <= 57" />%
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Show</a>
+                            <ul>
+                                <li>
+                                    <a id="show_timeLine" href="#">Timeline </a> </li>
+                                    <li><a id="show_name" href="#">species names </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"> Help</a></li>
+                </ul>
+            </nav>
+            <div class="map" id="tree"></div>
+            <div id="leftBar">
+                <div id="overview">
+                   <p id="overview-text">overview</p>
+               </div>
+               <div class="contextTree" id="contextTree">
+               </div>
+           </div>
+           <div id="rightBar">
+            <div class="topSelectBox" id="speOne">
+                <div class="innerBox">
+                 <p> Click Icons to Select Species.</p>
+             </div>
+             
+         </div>
+         <div class="SelectBox2" id="miniTree">
+            <button type="button" class="button" id="genome" >genome view</button>
+        </div>
+        <div class="bottomSelectBox" id="speTwo">
+            <div class="innerBox">
+                <p id=""> Click Icons to Select Species.</p>
+            </div>
+        </div>
+    </div>
+    <div id="vis">
+        <script src="js/jquery.js"></script>
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/d3/d3.min.js"></script>
+        <script src="js/newick.js"></script>
+        <script src="js/miniLife.js"></script>
+        <script src="js/phylo/phylo.js"></script>
+        <script src="js/phylo/createLinearTree.js"></script>
+        <script src="js/phylo/createRadialTree.js"></script>
+        <script src="js/createMiniTree.js"></script>
+        <script src="js/phylo/createLinearContextTree.js"></script>
+        <script src="js/phylo/createRadialContextTree.js"></script>
+        <script src="js/phylo/panAndZoom.js"></script>
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="smartmenus/libs/jquery/jquery.js"></script>
+
+        <!-- SmartMenus jQuery plugin -->
+        <script type="text/javascript" src="smartmenus/jquery.smartmenus.js"></script>
+
+        <!-- SmartMenus jQuery init -->
+        <script type="text/javascript" src="js/smartMenuInitial.js"></script>
+    </div>
+</body>
+
+</html>

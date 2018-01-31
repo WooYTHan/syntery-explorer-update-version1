@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- SmartMenus core CSS (required) -->
+    <link href="smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css" />
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="smartmenus/css/sm-clean/sm-clean.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <title></title>
+
+</head>
+
+<body>
+    <nav class="main-nav navbar-fixed-top" role="navigation">
+        <h2 class="nav-brand"><a href="#">Synteny Explorer</h2></a>
+        <ul id="main-menu" class="sm sm-clean">
+            <li><a href="#"> Mode</a>
+                <ul>
+                    <li><a  id="morphthenslide" href="#">Morphthenslide</a>
+                        <ul>
+                            <li><a class="mode" id="forward" href="#">Forward</a></li>
+                            <li><a class="mode" id="backward" href="#">Backward</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mode" id="static" href="#">Static</a></li>
+                    <li><a class="mode" id="circos" href="#">Circos</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> Help</a></li>
+        </ul>
+    </nav>
+    <div class="padding"></div>
+    <div id="chromosomes"></div>
+    <div id="rightBar">
+        <div class="topSelectBox" id="speOne">
+            <p> Click Icons to Select Species.</p>
+        </div>
+        <div class="SelectBox2" id="miniTree">
+        </div>
+        <div class="bottomSelectBox" id="speTwo">
+            <p id=""> Click Icons to Select Species.</p>
+        </div>
+    </div>
+
+    <div>
+        <script src="js/jquery.js"></script>
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/d3/d3.js"></script>
+        <script src="js/genome/d3-multichord.js"></script>
+        <script src="js/newick.js"></script>
+        <script src="js/createMiniTree.js"></script>
+        <script src="js/miniLife.js"></script>
+        <script src="js/genome/genome.js"></script>
+
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="smartmenus/libs/jquery/jquery.js"></script>
+
+        <!-- SmartMenus jQuery plugin -->
+        <script type="text/javascript" src="smartmenus/jquery.smartmenus.js"></script>
+
+        <!-- SmartMenus jQuery init -->
+        <script type="text/javascript" src="js/smartMenuInitial.js"></script>
+    </div>
+</body>
+
+</html>
